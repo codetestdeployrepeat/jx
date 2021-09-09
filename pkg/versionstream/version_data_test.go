@@ -51,7 +51,7 @@ func TestRepositories(t *testing.T) {
 	require.NoError(t, err, "GetRepositoryPrefixes() failed on dir %s", dataDir)
 
 	data := map[string]string{
-		"https://storage.googleapis.com/chartmuseum.jenkins-x.io": "jenkins-x",
+		"https://jenkins-x-charts.github.io/v2": "jenkins-x",
 		"http://chartmuseum.jenkins-x.io":                         "jenkins-x",
 		"https://kubernetes-charts.storage.googleapis.com":        "stable",
 	}
